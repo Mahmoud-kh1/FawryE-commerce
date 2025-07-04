@@ -63,7 +63,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        PerishableShippableProduct cheese = new PerishableShippableProduct("Cheese", 100, 5,
+        PerishableShippableProduct cheese = new PerishableShippableProduct("Cheese", 100, 1,
                 LocalDate.now().plusDays(5), 0.2);
         PerishableShippableProduct biscuits = new PerishableShippableProduct("Biscuits", 150, 2,
                 LocalDate.now().plusDays(10), 0.7);

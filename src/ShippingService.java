@@ -1,6 +1,6 @@
 import java.util.List;
 
-class ShippingService {
+class ShippingService implements Shipable{
     public static void ship(List<Shipable> list) {
         System.out.println("** Shipment notice **");
         double totalWeight = 0;
@@ -9,5 +9,15 @@ class ShippingService {
             totalWeight += s.getWeight();
         }
         System.out.printf("Total package weight %.1fkg\n", totalWeight);
+    }
+
+    @Override
+    public Double getWeight() {
+        return 0.0;
+    }
+
+    @Override
+    public String getName() {
+        return "";
     }
 }
